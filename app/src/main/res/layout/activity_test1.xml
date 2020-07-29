@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Test1">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+<!--
+    文本视图
+        layout_width宽
+        layout_height高
+        id id
+        background背景色
+        textColor文本颜色
+        textSize字体大小
+-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text1"
+            android:text="东方Project"
+            android:background="#8BC34A"
+            android:textColor="#F44336"
+            android:textSize="24sp"></TextView>
+
+<!--
+    EditText文本输入框
+        inputType输入类型会自动限制
+        hint默认提示
+-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text2"
+            android:inputType="phone"
+            android:hint="请输入手机号"
+            android:textSize="24sp"></EditText>
+
+<!--
+    Button按钮
+-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:textSize="24sp"
+            android:id="@+id/btn5"></Button>
+
+<!--
+    ImageView图片视图
+        background背景图片
+        src前景图片
+-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img1"
+            android:background="@android:drawable/btn_radio"
+            android:src="@android:drawable/btn_star"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/a"
+                android:text="动漫"
+                android:textSize="24sp"></CheckBox>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/c"
+                android:text="漫画"
+                android:textSize="24sp"></CheckBox>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/g"
+                android:text="游戏"
+                android:textSize="24sp"></CheckBox>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/n"
+                android:text="小说"
+                android:textSize="24sp"></CheckBox>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn6"
+                android:text="确定"
+                android:textSize="24sp"></Button>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
